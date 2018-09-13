@@ -6,7 +6,7 @@ public class FirstNameLastNameAge {
 		// TODO Auto-generated method stub
 
 		String newLine = System.getProperty("line.separator");
-		
+
 		System.out.println("Kenny" + newLine + "Mendoza" + newLine + 17);
 	}
 
