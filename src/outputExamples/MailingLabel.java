@@ -1,5 +1,7 @@
 package outputExamples;
 
+import java.util.Scanner;
+
 public class MailingLabel {
 
 	public static void main(String[] args) {
