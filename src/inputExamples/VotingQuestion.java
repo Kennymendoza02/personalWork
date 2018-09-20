@@ -8,12 +8,16 @@ public class VotingQuestion {
 		// TODO Auto-generated method stub
 
 		Scanner input = new Scanner(System.in);
-		
-		String vote;
+
 		System.out.println("Did you vote?");
-		vote = input.nextLine();
-		
-		System.out.println(vote);
+		String vote = input.nextLine();
+
+		if (vote.toLowerCase().contains("yes")) {
+			System.out.println("You have voted");
+		} else {
+			System.out.println("You have not voted");
+		}
+
 	}
 
 }
