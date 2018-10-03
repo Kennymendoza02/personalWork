@@ -5,9 +5,13 @@ public class TestClass {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		Room oesterToasterRoom = new Room();
-		oesterToasterRoom.area();
-		oesterToasterRoom.areaWithDoor();
+	Room closet = new Room();
+	Room kitchen = new Room();
+	kitchen = closet;
+	Room basement = new Room();
+	closet = basement;
+	closet.area();
+	
 	}
 
 }
