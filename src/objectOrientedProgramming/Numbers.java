@@ -18,4 +18,18 @@ public class Numbers {
 	{
 		System.out.println("Your number is: " + (num + num2));
 	}
+	public double returnSquare(double number)
+	{
+	number = number * number;
+	return number;
+	}
+	public double returnArea(double length, double width)
+	{
+		double area = length * width;
+		return area;
+	}
+	public double roundUp(double num17)
+	{
+		return Math.ceil(num17);
+	}
 }
