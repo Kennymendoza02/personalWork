@@ -1,6 +1,7 @@
 package decisions;
 
 import java.util.Scanner;
+import java.util.stream.IntStream;
 
 public class DoWhile {
 
@@ -93,8 +94,40 @@ public class DoWhile {
 						System.out.println("(" + factor + ")" + "(" + factor2 + ")");
 				}
 			}
-
+			break;
 			
+		case 8:
+		
+			int factorr = 0;
+			int tester;
+			int sum1 = 0;
+			
+			for (int first = 1; first<=1000; first++){
+			
+				int[] data = new int[first];
+				int pos;
+			
+				for (factorr = 1, pos = 0; factorr <= first + 1; factorr++){
+				
+					if (factorr <= first ){
+				
+						if(first % factorr == 0){
+							data[pos] = factorr;
+							pos++;
+						}
+					
+					}
+				
+				} 
+			
+					sum1 = IntStream.of(data).sum();
+					if(sum1 == first){
+						System.out.println(first);
+					}
+				
+			
+				
+			}
 			
 			
 			
