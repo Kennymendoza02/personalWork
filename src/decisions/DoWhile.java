@@ -101,15 +101,16 @@ public class DoWhile {
 			int factorr = 0;
 			int tester;
 			int sum1 = 0;
+			int pos = 0;
 			
 			for (int first = 1; first<=1000; first++){
 			
 				int[] data = new int[first];
-				int pos;
+		
 			
-				for (factorr = 1, pos = 0; factorr <= first + 1; factorr++){
+				for (factorr = 1, pos = 0; factorr <= first; factorr++){
 				
-					if (factorr <= first ){
+					if (factorr < first ){
 				
 						if(first % factorr == 0){
 							data[pos] = factorr;
