@@ -46,7 +46,21 @@ public class FirstThirdWhole {
 			}
 		break;
 			
-	
+		case 4:
+			input.nextLine();
+			System.out.println("Enter a name");
+			String name = input.nextLine();
+			System.out.println("Enter another name");
+			String nameSecond = input.nextLine();
+			
+			if(name.toUpperCase().compareTo(nameSecond.toUpperCase()) < 0) {
+				System.out.println("The first name comes before the second name in alphabetiv order.");
+			} else if (name.toUpperCase().compareTo(nameSecond.toUpperCase()) == 0){
+				System.out.println("The names are the exact same.");
+			} else if (name.toUpperCase().compareTo(nameSecond.toUpperCase()) > 0){
+				System.out.println("The second name comes before the first name in alphabetiv order.");
+			}
+			break;
 		}
 	}
 
